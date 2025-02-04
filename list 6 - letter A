@@ -1,0 +1,16 @@
+using System;
+
+namespace Atividade_5___01
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			DateTime dataatual = DateTime.Now;
+			
+			Console.WriteLine(dataatual);
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
