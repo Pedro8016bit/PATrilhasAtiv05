@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+
+namespace Atividade_05___02
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+				
+        List<DateTime> feriadosNacionais = new List<DateTime>
+        {
+            
+            new DateTime(DateTime.Now.Year, 1, 1),     
+            new DateTime(DateTime.Now.Year, 4, 21),  
+            new DateTime(DateTime.Now.Year, 5, 1),  
+            new DateTime(DateTime.Now.Year, 9, 7),  
+            new DateTime(DateTime.Now.Year, 10, 12), 
+            new DateTime(DateTime.Now.Year, 11, 15), 
+            new DateTime(DateTime.Now.Year, 12, 25)  
+        };
+
+        Console.WriteLine("Digite uma data do ano atual no formato 'dd/MM/yyyy', para verificarmos se ela é um feriado nacional:");
+        string entrada = (Console.ReadLine());
+
+        DateTime data;
+        bool dataValida = DateTime.TryParse(entrada, out data);
+
+        if (dataValida)
+        {
+            if (feriadosNacionais.Contains(data.Date))
+            {
+                Console.WriteLine("A data fornecida é um feriado nacional!");
+            }
+            else
+            {
+                Console.WriteLine("A data fornecida NÃO é um feriado nacional.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("A data fornecida está em um formato inválido!");
+        }
+
+        Console.WriteLine("");
+			Console.Write("Press a nny key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
