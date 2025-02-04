@@ -1,0 +1,24 @@
+using System;
+
+namespace Atividade_05___02
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("me diga a sua idade no modelo yyyy/mm/dd");
+			string nasci = (Console.ReadLine());
+			DateTime dataNascimento = DateTime.Parse(nasci);
+			DateTime dataatual = DateTime.Now;
+				
+			TimeSpan idade = dataatual - dataNascimento;
+			int idadeEmanos = (int)(idade.TotalDays / 365.25);
+			
+			Console.WriteLine("sua idade:" + idadeEmanos);
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
