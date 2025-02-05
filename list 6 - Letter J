@@ -1,0 +1,25 @@
+	using System;
+	
+	namespace Atividade_5__J
+	{
+		class Program
+		{
+			public static void Main(string[] args)
+			{
+				Console.WriteLine("Escrava o tamanho da camisa (P, M, G) ");
+				string letra = (Console.ReadLine().ToLower());
+				
+				switch (letra) {
+						case "p": Console.WriteLine("R$ 14,99");break;
+						case "m": Console.WriteLine("R$ 19,99");break;
+						case "g": Console.WriteLine("R$ 24,99");break;
+						default: Console.WriteLine("Tamanho invalido");break;
+				}
+				
+				
+			
+				Console.Write("Pressione para continuar . . . ");
+				Console.ReadKey(true);
+			}
+		}
+	}
