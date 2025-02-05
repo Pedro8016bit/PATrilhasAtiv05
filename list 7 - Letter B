@@ -1,0 +1,23 @@
+using System;
+
+namespace lista_6
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("digite um numero inteiro positivo");
+			int num = Convert.ToInt32(Console.ReadLine());
+			int i = 0;
+			
+			while(i <= 10){
+				int soma = num * i;
+				Console.WriteLine(soma);
+				i++;
+			}
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
