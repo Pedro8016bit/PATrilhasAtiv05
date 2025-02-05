@@ -1,0 +1,25 @@
+using System;
+
+namespace Atividade_5__G
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Escolha uma corte entre vermelho, azul ou verde sendo eles 1, 2 e 3 respectivamente : ");
+			int cor = int.Parse(Console.ReadLine());
+			
+			switch (cor) {
+					case 1: Console.WriteLine("vermelho");break;
+					case 2: Console.WriteLine("azul");break;
+					case 3: Console.WriteLine("verde");break;
+					default: Console.WriteLine("Numero invalido");break;
+			}
+			
+			
+		
+			Console.Write("Pressione para continuar . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
