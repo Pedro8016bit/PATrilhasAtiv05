@@ -1,0 +1,26 @@
+using System;
+
+namespace Lista_7__F
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			
+			Console.WriteLine("Digite um numero inteiro: ");
+			int n1 = Convert.ToInt32(Console.ReadLine());
+			int cont = 0;
+			while (cont <= n1) {
+				if (cont % 2 == 0) {
+					Console.WriteLine(cont);
+				}
+				cont++;
+			}
+			
+
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
