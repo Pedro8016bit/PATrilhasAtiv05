@@ -1,0 +1,31 @@
+using System;
+
+namespace Lista_7__J
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Digite a senha");
+			int cont = 0;
+			int senha = Convert.ToInt32(Console.ReadLine());
+			do {
+				if (senha == 1234) {
+					Console.WriteLine("Sucesso");
+					break;
+				}else{
+				Console.WriteLine("senha incorreta, tente novamente.");
+				cont++;
+				}
+				senha = Convert.ToInt32(Console.ReadLine());
+			}while (cont < 3);
+			if (cont == 3) {
+			Console.WriteLine("Você execeu o limite de senhas.");
+			}
+		
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
