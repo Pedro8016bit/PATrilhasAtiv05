@@ -1,0 +1,27 @@
+using System;
+
+namespace Lista_7__I
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			
+			Console.WriteLine("Quantos numeros você vai digitar: ");
+			int quant = Convert.ToInt32(Console.ReadLine());
+			int[] numeros = new int[quant];
+			int cont = 0, soma1 = 0;
+			
+		do
+		{
+				numeros[cont] = Convert.ToInt32(Console.ReadLine());
+				soma1 = numeros[cont] + soma1;
+					cont++;	
+		}	while (cont < quant);
+			Console.WriteLine(soma1);
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
